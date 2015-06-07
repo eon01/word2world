@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block content %}
+
+{% for row in h %}
+    {# Note that we subscript `row` directly,
+    (rather than attempting to index `test` with `row`) #}
+    {{ row|safe }}
+{% endfor %}
+
+{% endblock %}
